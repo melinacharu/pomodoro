@@ -1,6 +1,4 @@
-/*describes how HTML content should be rendered */
 html {
-    /* high level styles to set font and background */
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
     letter-spacing: 0.8px;
@@ -9,16 +7,11 @@ html {
     background-image: linear-gradient(-20deg, #025159 0%, #733b36 100%);
     background-size: cover;
 }
-
-/* additional styles for font and heading */
-/* margin and padding used to give space between elements */
+  
 h1 {
-    margin: 0;
-    color: #d8f5ff;
-    text-align: center;
-    overflow: auto;
+    margin: 0 auto 10px auto;
+    color: #d8e9ef;
 }
-
   
 p {
     margin: 0;
@@ -41,20 +34,24 @@ p {
     border-radius: 5px;
     padding: 20px;
 }
-
-.app-circle { /* remaining time and start button */
+  
+.app-circle {
     position: relative;
     top: 40px;
     margin: 0 auto;
     width: 200px;
     height: 200px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
 }
   
-.circle-shape {  /* set so that the rendered circle cannot be clicked */
+.circle-shape {
     pointer-events: none;
     position: center;
 }
-
+  
 .semi-circle {
     position: absolute;
     width: 100px;
@@ -67,42 +64,37 @@ p {
     top: 0;
     left: 0;
     transform-origin: right center;
-    transform: rotate(0);
+    transform: rotate(0deg);
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     border-right: none;
     z-index: 1;
 }
-   
+    
 .right-side {
     top: 0;
     left: 100px;
     transform-origin: left center;
-    transform: rotate(0);
+    transform: rotate(0deg);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-left: none;
 }
-
-/* set border colour for circle outline */
+  
 .circle {
-    border-color: #bf5239;
+    border-color: #BF5239;
 }
   
 .circle-mask {
-    border-color: #5ae87b;
+    border-color: #e85a71;
 }
-
-div {
-    text-align: center;
-}
-
-/* remaining time for the timer */
+  
 .app-counter-box {
     font-family: 'Droid Sans Mono', monospace;
     font-size: 250%;
     position: relative;
     text-align: center;
+    margin: 10px;
     top: 60px;
     color: #d8e9ef;
 }
@@ -124,9 +116,9 @@ div {
     color: white
 }
   
-.btn-start {  /* only text is visible and it is uppercase */
+.btn-start {
     position: relative;
-    top: 60px;
+    top: 50px;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -136,7 +128,6 @@ div {
     color: #d8e9ef;
 }
   
-/* when hovered, button colour should change */
 .btn-start:hover {
     color: #90c0d1;
 }
