@@ -1,0 +1,142 @@
+/*describes how HTML content should be rendered */
+html {
+    /* high level styles to set font and background */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    min-height: 100vh;
+    color: #d8e9ef;
+    background-image: linear-gradient(-20deg, #025159 0%, #733b36 100%);
+    background-size: cover;
+}
+
+/* additional styles for font and heading */
+/* margin and padding used to give space between elements */
+h1 {
+    margin: 0;
+    color: #d8f5ff;
+    text-align: center;
+    overflow: auto;
+}
+
+  
+p {
+    margin: 0;
+}
+  
+.app-message {
+    height: 20px;
+    margin: 10px auto 20px auto;
+    bottom: 20px;
+    color: #90c0d1;
+    text-align: center;
+    line-height: 1.5;
+}
+  
+.app-container {
+    width: 250px;
+    height: 40px;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.app-circle { /* remaining time and start button */
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+  
+.circle-shape {  /* set so that the rendered circle cannot be clicked */
+    pointer-events: none;
+    position: center;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+  
+.left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: none;
+    z-index: 1;
+}
+   
+.right-side {
+    top: 0;
+    left: 100px;
+    transform-origin: left center;
+    transform: rotate(0);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+}
+
+/* set border colour for circle outline */
+.circle {
+    border-color: #bf5239;
+}
+  
+.circle-mask {
+    border-color: #5ae87b;
+}
+
+div {
+    text-align: center;
+}
+
+/* remaining time for the timer */
+.app-counter-box {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 250%;
+    position: relative;
+    text-align: center;
+    top: 60px;
+    color: #d8e9ef;
+}
+
+.btn-50, .btn-25 {
+    top: 50px;
+    font-size: 80%;
+    letter-spacing: 1px;
+    border: 1.5px solid #90c0d1;
+    border-color: #90c0d1;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    color: #90c0d1;
+}
+
+.btn-50:hover, .btn-25:hover {
+    background-color: #90c0d1;
+    color: white
+}
+  
+.btn-start {  /* only text is visible and it is uppercase */
+    position: relative;
+    top: 60px;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;
+}
+  
+/* when hovered, button colour should change */
+.btn-start:hover {
+    color: #90c0d1;
+}
