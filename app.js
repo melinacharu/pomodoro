@@ -14,7 +14,7 @@ const appTimer = () => {
   
       const updateSeconds = () => {
         const minuteDiv = document.querySelector('.minutes');
-        const secondDiv = document.querySelector('.seconds')
+        const secondDiv = document.querySelector('.seconds');
   
         totalSeconds--;
   
@@ -38,6 +38,37 @@ const appTimer = () => {
       alert('Session has already started.')
     }
 }
-
 startBtn.addEventListener('click', appTimer);
 
+// reset and variation buttons code block
+mins = document.querySelector(".minutes");
+sec = document.querySelector('.seconds');
+let variation = false
+function twfive() {
+    clearInterval(myInterval)
+    mins.textContent = 25
+    sec.textContent = "00"
+    state = true
+}
+function fifty() {
+    clearInterval(myInterval)
+    mins.textContent = 50
+    sec.textContent = "00"
+    state = true
+    variation = true
+}
+
+function reset() {
+    if(variation = true) {
+        clearInterval(myInterval)
+        mins.textContent = 50
+        sec.textContent = "00"
+        state = true
+        variation = false
+    } else {
+        clearInterval(myInterval)
+        mins.textContent = 25
+        sec.textContent = "00"
+        state = true
+    }
+}
