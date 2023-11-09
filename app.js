@@ -41,8 +41,8 @@ const appTimer = () => {
 startBtn.addEventListener('click', appTimer);
 
 // reset and variation buttons code block
-mins = document.querySelector(".minutes");
-sec = document.querySelector('.seconds');
+const mins = document.querySelector(".minutes");
+const sec = document.querySelector('.seconds');
 let variation = false
 function twfive() {
     clearInterval(myInterval)
