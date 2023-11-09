@@ -116,7 +116,7 @@ p {
     color: white
 }
   
-.btn-start, .btn-reset {
+.btn-start, .btn-reset, .btn-pause {
     position: relative;
     top: 50px;
     font-size: 80%;
