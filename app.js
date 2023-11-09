@@ -75,5 +75,5 @@ function reset() {
 
 function pause() {
     alert('are you sure? sit your lazy ass back down.')
-    clearInterval(myInterval)
+    state = true
 }
