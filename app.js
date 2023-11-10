@@ -79,7 +79,3 @@ function pause() {
     clearInterval(myInterval)
 
 }
-
-function custom() {
-  
-}
