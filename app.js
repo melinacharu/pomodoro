@@ -1,6 +1,7 @@
 const bells = new Audio('./sounds/bell.wav'); // assign path of the bell sound as a parameter
 const startBtn = document.querySelector('.btn-start'); // class selectors to update elements on the web page
 const session = document.querySelector('.minutes'); 
+const pauseBtn = document.querySelector('.btn-pause')
 
 let myInterval; // instantiate myInterval
 let state = true; // defines when the application is running
@@ -19,6 +20,7 @@ const appTimer = () => {
         totalSeconds--;
   
         let minutesLeft = Math.floor(totalSeconds/60);
+        window.minutesLeft = minutesLeft
         let secondsLeft = totalSeconds % 60;
   
         if(secondsLeft < 10) {
@@ -75,7 +77,9 @@ function reset() {
     }
 }
 
-function pause() {
-    clearInterval(myInterval)
 
+function pause() {
+    clearInterval(myInterval);
+    window.minutesLeft++;
+    state = true;
 }
