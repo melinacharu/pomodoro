@@ -27,6 +27,7 @@ p {
 }
   
 .app-container {
+    position: relative;
     width: auto;
     height: auto;
     margin: auto;
@@ -37,6 +38,9 @@ p {
   
 .circle {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
     border: solid 4px;
@@ -45,13 +49,12 @@ p {
 }
   
 
-  
 .app-counter-box {
     font-family: 'Droid Sans Mono', monospace;
     font-size: 250%;
     position: relative;
     text-align: center;
-    margin: 10px;
+    margin: 85px;
     top: 72px;
     color: #d8e9ef;
 }
@@ -75,7 +78,7 @@ p {
   
 .btn-start, .btn-reset, .btn-pause {
     position: relative;
-    top: 150px;
+    top: 110px;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 1px;
