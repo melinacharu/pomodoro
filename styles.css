@@ -95,7 +95,7 @@ p {
     position: relative;
     text-align: center;
     margin: 10px;
-    top: 60px;
+    top: 72px;
     color: #d8e9ef;
 }
 
@@ -118,7 +118,7 @@ p {
   
 .btn-start, .btn-reset, .btn-pause {
     position: relative;
-    top: 50px;
+    top: 150px;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 1px;
