@@ -49,6 +49,7 @@ function twfive() {
     mins.textContent = 25
     sec.textContent = "00"
     state = true
+    variation = false
 }
 function fifty() {
     clearInterval(myInterval)
@@ -59,7 +60,8 @@ function fifty() {
 }
 
 function reset() {
-    if(variation = true) {
+    if(variation) {
+        variation = true
         clearInterval(myInterval)
         mins.textContent = 50
         sec.textContent = "00"
@@ -74,8 +76,8 @@ function reset() {
 }
 
 function pause() {
-    alert('are you sure? sit your lazy ass back down.')
-    state = true
+    clearInterval(myInterval)
+
 }
 
 function custom() {
