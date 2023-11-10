@@ -77,7 +77,3 @@ function pause() {
     alert('are you sure? sit your lazy ass back down.')
     state = true
 }
-
-function custom() {
-  
-}
