@@ -27,67 +27,24 @@ p {
 }
   
 .app-container {
-    width: 250px;
-    height: 40px;
-    margin: 0px auto;
+    width: auto;
+    height: auto;
+    margin: auto;
     text-align: center;
     border-radius: 5px;
     padding: 20px;
 }
   
-.app-circle {
-    position: relative;
-    top: 40px;
-    margin: 0 auto;
+.circle {
+    position: absolute;
     width: 200px;
     height: 200px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-}
-  
-.circle-shape {
-    pointer-events: none;
-    position: center;
-}
-  
-.semi-circle {
-    position: absolute;
-    width: 100px;
-    height: 200px;
-    box-sizing: border-box;
-    border: solid 6px;
-}
-  
-.left-side {
-    top: 0;
-    left: 0;
-    transform-origin: right center;
-    transform: rotate(0deg);
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-right: none;
-    z-index: 1;
-}
-    
-.right-side {
-    top: 0;
-    left: 100px;
-    transform-origin: left center;
-    transform: rotate(0deg);
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    border-left: none;
-}
-  
-.circle {
+    border: solid 4px;
+    border-radius: 50%;
     border-color: #BF5239;
 }
   
-.circle-mask {
-    border-color: #e85a71;
-}
+
   
 .app-counter-box {
     font-family: 'Droid Sans Mono', monospace;
