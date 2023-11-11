@@ -55,11 +55,11 @@ p {
     position: relative;
     text-align: center;
     margin: 85px;
-    top: 72px;
+    top: 10px;
     color: #d8e9ef;
 }
 
-.btn-50, .btn-25 {
+.btn-50, .btn-25, .btn-custom {
     top: 50px;
     font-size: 80%;
     letter-spacing: 1px;
@@ -71,7 +71,7 @@ p {
     color: #90c0d1;
 }
 
-.btn-50:hover, .btn-25:hover {
+.btn-50:hover, .btn-25:hover, .btn-custom:hover {
     background-color: #90c0d1;
     color: white
 }
@@ -90,4 +90,14 @@ p {
   
 .btn-start:hover, .btn-reset:hover, .btn-pause:hover {
     color: #90c0d1;
+}
+
+.minute-slider {
+    color: #733b36;
+    width: 200px;
+}
+
+.slider {
+    margin: 60px;
+    padding-bottom: 20px;
 }

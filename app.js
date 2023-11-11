@@ -83,3 +83,12 @@ function pause() {
     window.minutesLeft++;
     state = true;
 }
+
+function sliderHide() {
+  var slider = document.getElementsByClassName("slider");
+  if (slider.style.visibility === "hidden") {
+    slider.style.visibility = "visible";
+  } else {
+    slider.style.visibility = "hidden";
+  }
+}
