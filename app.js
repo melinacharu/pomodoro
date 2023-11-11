@@ -63,15 +63,13 @@ function fifty() {
     variation = true
 }
 
-function customTime() {
-
-  var minute = document.getElementById("minute-slider");
-  var currentValue = minute.value;
+var slider = document.getElementById("minute-slider").oninput = function setNumber() {
     clearInterval(myInterval)
-    mins.textContent = currentValue;
+    var value = (this.value-this.min)
+
+    mins.textContent = value
     sec.textContent = "00"
-    state = true;
-    variation = true;
+
 }
 
 function reset() {

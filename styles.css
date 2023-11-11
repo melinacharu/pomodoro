@@ -95,8 +95,10 @@ p {
 #minute-slider {
     color: #733b36;
     width: 200px;
-    -webkit-appearbox-shadow: 10px 10px 20px -3px rgba(10,0,0);
-    box-shadow: 10px 10px 20px -3px rgba(10,0,0);
+    -webkit-appearance: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px -20px rgba(10,0,0);
+    -webkit-box-shadow: 10px 10px 20px -3px rgba(10,0,0);
 }
 
 #slider {
