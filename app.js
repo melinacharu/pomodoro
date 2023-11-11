@@ -6,6 +6,9 @@ const pauseBtn = document.querySelector('.btn-pause')
 let myInterval; // instantiate myInterval
 let state = true; // defines when the application is running
 
+
+
+
 const appTimer = () => {
     const sessionAmount = Number.parseInt(session.textContent)
   
@@ -48,6 +51,10 @@ const sec = document.querySelector('.seconds');
 let variation = false
 
 
+
+
+// NUMBER FUNCTIONS -------------------------------------------------------
+
 function twfive() {
     clearInterval(myInterval)
     mins.textContent = 25
@@ -64,13 +71,15 @@ function fifty() {
 }
 
 var slider = document.getElementById("minute-slider").oninput = function setNumber() {
-    clearInterval(myInterval)
-    var value = (this.value-this.min)
+  clearInterval(myInterval)
+  var value = (this.value-this.min)
 
-    mins.textContent = value
-    sec.textContent = "00"
+  mins.textContent = value
+  sec.textContent = "00"
 
 }
+
+// CONTROL FUNC -------------------------------------------------------------
 
 function reset() {
     if(variation) {
@@ -88,12 +97,14 @@ function reset() {
     }
 }
 
-
 function pause() {
     clearInterval(myInterval);
     window.minutesLeft++;
     state = true;
 }
+
+
+// SLIDER FUNCTION -------------------------------------------------------------
 
 function sliderHide() {
   var slider = document.getElementById("slider");
@@ -103,3 +114,5 @@ function sliderHide() {
     slider.style.visibility = "hidden";
   }
 }
+
+

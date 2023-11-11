@@ -90,6 +90,7 @@ p {
   
 .btn-start:hover, .btn-reset:hover, .btn-pause:hover {
     color: #90c0d1;
+    font-size: 100%;
 }
 
 #minute-slider {
