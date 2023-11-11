@@ -85,7 +85,7 @@ function pause() {
 }
 
 function sliderHide() {
-  var slider = document.getElementsByClassName("slider");
+  var slider = document.getElementById("slider");
   if (slider.style.visibility === "hidden") {
     slider.style.visibility = "visible";
   } else {
