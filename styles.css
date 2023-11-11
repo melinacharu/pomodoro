@@ -92,9 +92,11 @@ p {
     color: #90c0d1;
 }
 
-.minute-slider {
+#minute-slider {
     color: #733b36;
     width: 200px;
+    -webkit-appearbox-shadow: 10px 10px 20px -3px rgba(10,0,0);
+    box-shadow: 10px 10px 20px -3px rgba(10,0,0);
 }
 
 #slider {

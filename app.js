@@ -46,6 +46,8 @@ startBtn.addEventListener('click', appTimer);
 const mins = document.querySelector(".minutes");
 const sec = document.querySelector('.seconds');
 let variation = false
+
+
 function twfive() {
     clearInterval(myInterval)
     mins.textContent = 25
@@ -59,6 +61,17 @@ function fifty() {
     sec.textContent = "00"
     state = true
     variation = true
+}
+
+function customTime() {
+
+  var minute = document.getElementById("minute-slider");
+  var currentValue = minute.value;
+    clearInterval(myInterval)
+    mins.textContent = currentValue;
+    sec.textContent = "00"
+    state = true;
+    variation = true;
 }
 
 function reset() {
