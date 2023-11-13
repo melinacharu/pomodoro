@@ -7,7 +7,7 @@ let myInterval; // instantiate myInterval
 let state = true; // defines when the application is running
 
 
-
+// START PAUSE ---------------------------------------------------------------
 
 const appTimer = () => {
     const sessionAmount = Number.parseInt(session.textContent)
@@ -40,17 +40,19 @@ const appTimer = () => {
       }
       myInterval = setInterval(updateSeconds, 1000);
     } else {
-      alert('Session has already started.')
+      clearInterval(myInterval);
+      window.minutesLeft++;
+      state = true;
     }
 }
 startBtn.addEventListener('click', appTimer);
 
-// reset and variation buttons code block
+
+// reset and variation buttons code block ---------------------------------
+
 const mins = document.querySelector(".minutes");
 const sec = document.querySelector('.seconds');
 let variation = false
-
-
 
 
 // NUMBER FUNCTIONS -------------------------------------------------------
@@ -82,6 +84,9 @@ var slider = document.getElementById("minute-slider").oninput = function setNumb
 // CONTROL FUNC -------------------------------------------------------------
 
 function reset() {
+  
+    document.getElementById("btn-start").innerHTML = "start";
+
     if(variation) {
         variation = true
         clearInterval(myInterval)
@@ -97,12 +102,6 @@ function reset() {
     }
 }
 
-function pause() {
-    clearInterval(myInterval);
-    window.minutesLeft++;
-    state = true;
-}
-
 
 // SLIDER FUNCTION -------------------------------------------------------------
 
@@ -115,4 +114,13 @@ function sliderHide() {
   }
 }
 
+// START PAUSE TEXT ------------------------------------------------------------
+
+function textChange() {
+    var playpause = document.getElementById("btn-start");
+
+    if (playpause.innerHTML=="start") playpause.innerHTML = "pause";
+    else (playpause.innerHTML = "start");
+
+}
 

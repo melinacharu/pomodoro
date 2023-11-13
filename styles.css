@@ -76,7 +76,19 @@ p {
     color: white
 }
   
-.btn-start, .btn-reset, .btn-pause {
+.btn-start {
+    position: relative;
+    top: 110px;
+    font-size: 120%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;
+}
+
+.btn-reset {
     position: relative;
     top: 110px;
     font-size: 80%;
@@ -88,9 +100,14 @@ p {
     color: #d8e9ef;
 }
   
-.btn-start:hover, .btn-reset:hover, .btn-pause:hover {
+.btn-start:hover {
     color: #90c0d1;
-    font-size: 100%;
+    font-size: 120%;
+}
+
+.btn-reset:hover {
+    color: #90c0d1;
+    font-size: 80%;
 }
 
 #minute-slider {
