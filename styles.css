@@ -17,6 +17,10 @@ p {
     margin: 0;
 }
   
+.minutesbreak, .secondsbreak, .semicolon {
+    font-size: 60%;
+}
+
 .app-message {
     height: 20px;
     margin: 0px auto 20px auto;
@@ -36,7 +40,8 @@ p {
     padding: 20px;
 }
   
-.circle {
+
+.circlestudy {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +50,19 @@ p {
     height: 200px;
     border: solid 4px;
     border-radius: 50%;
-    border-color: #BF5239;
+    border-color: #af3418;
+}
+  
+.circlebreak {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 215px;
+    height: 215px;
+    border: solid 4px;
+    border-radius: 50%;
+    border-color: #9cd90d;
 }
   
 
