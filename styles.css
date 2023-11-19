@@ -72,7 +72,7 @@ p {
     position: relative;
     text-align: center;
     margin: 85px;
-    top: 10px;
+    top: 5px;
     color: #d8e9ef;
 }
 
@@ -127,13 +127,18 @@ p {
     font-size: 80%;
 }
 
-#minute-slider {
+#minute-slider, #minute-slider-break {
     color: #733b36;
     width: 200px;
     -webkit-appearance: none;
     border-radius: 20px;
     box-shadow: 10px 10px 25px -20px rgba(10,0,0);
     -webkit-box-shadow: 10px 10px 20px -3px rgba(10,0,0);
+}
+
+#breaktext, #studytext {
+    padding-bottom: 5px;
+    padding-top: 2px;
 }
 
 #slider {

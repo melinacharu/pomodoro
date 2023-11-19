@@ -52,7 +52,7 @@ startBtn.addEventListener('click', appTimer);
 
 const mins = document.querySelector(".minutes");
 const sec = document.querySelector('.seconds');
-const minbreak = document.querySelector(".minutesbreak")
+const minsbreak = document.querySelector(".minutesbreak")
 const secbreak = document.querySelector(".secondsbreak")
 let variation = false
 
@@ -63,7 +63,7 @@ function twfive() {
     clearInterval(myInterval)
     mins.textContent = 25
     sec.textContent = "00"
-    minbreak.textContent = "05"
+    minsbreak.textContent = "05"
 
     state = true
     variation = false
@@ -72,7 +72,7 @@ function fifty() {
     clearInterval(myInterval)
     mins.textContent = 50
     sec.textContent = "00"
-    minbreak.textContent = 10
+    minsbreak.textContent = 10
 
     state = true
     variation = true
@@ -83,6 +83,15 @@ var slider = document.getElementById("minute-slider").oninput = function setNumb
   var value = (this.value-this.min)
 
   mins.textContent = value
+  sec.textContent = "00"
+
+}
+
+var slider = document.getElementById("minute-slider-break").oninput = function setNumber() {
+  clearInterval(myInterval)
+  var value = (this.value-this.min)
+
+  minsbreak.textContent = value
   sec.textContent = "00"
 
 }
